@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator{
+
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "screen screen screen screen"
+        " mult   div    sum    sub"
+        "seven  eight   nine  equal "
+        " four  five    six   equal"
+        " one    two   three   del "
+        "zero   zero   dot  clear"
+    ;
+    grid-gap: 1%;
+
+}
+
+.btn,
+.value {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+#inputScreen{
+    grid-area: screen;
+    text-align: right;
+    padding-right: 200px;
+}
+
+#mult{
+    grid-area: mult;
+}
+#div{
+    grid-area: div;
+}
+#sum{
+    grid-area: sum;
+}
+#sub{
+    grid-area: sub;
+}
+#dot{
+    grid-area: dot;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
+}
+#seven{
+    grid-area: seven;
+}
+#eight{
+    grid-area: eight;
+}
+#nine{
+    grid-area: nine;
+}
+#zero{
+    grid-area: zero;
+}
+#delt{
+    grid-area: del;
+}
+#equal{
+    grid-area: equal;
+    
+}
+#clear{
+    grid-area: clear;
+}
+
+.btn{
+    transition: all 0.1s linear;
+}
+
+.active{
+    color: #fff;
+    background-color: #000;
+}
